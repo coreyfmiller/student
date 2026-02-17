@@ -8,7 +8,7 @@ import {
   studentProfile,
   heartRateData,
   stressData,
-  movementData,
+  sensoryLoadData,
   socialCues,
   actionAlerts,
   arousalLevel,
@@ -31,7 +31,7 @@ export default function DashboardPage() {
           <BiometricCards
             heartRateData={heartRateData}
             stressData={stressData}
-            movementData={movementData}
+            sensoryLoadData={sensoryLoadData}
           />
         </section>
 

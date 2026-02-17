@@ -44,19 +44,19 @@ export const stressData: BiometricReading[] = [
   { time: "9:55", value: 32 },
 ]
 
-export const movementData: BiometricReading[] = [
-  { time: "9:00", value: 30 },
-  { time: "9:05", value: 45 },
-  { time: "9:10", value: 55 },
-  { time: "9:15", value: 40 },
-  { time: "9:20", value: 35 },
-  { time: "9:25", value: 60 },
-  { time: "9:30", value: 70 },
-  { time: "9:35", value: 50 },
-  { time: "9:40", value: 45 },
-  { time: "9:45", value: 65 },
-  { time: "9:50", value: 40 },
-  { time: "9:55", value: 35 },
+export const sensoryLoadData: BiometricReading[] = [
+  { time: "9:00", value: 45 },
+  { time: "9:05", value: 48 },
+  { time: "9:10", value: 52 },
+  { time: "9:15", value: 75 },
+  { time: "9:20", value: 82 },
+  { time: "9:25", value: 68 },
+  { time: "9:30", value: 45 },
+  { time: "9:35", value: 55 },
+  { time: "9:40", value: 88 },
+  { time: "9:45", value: 72 },
+  { time: "9:50", value: 58 },
+  { time: "9:55", value: 50 },
 ]
 
 export interface SocialCueEvent {

@@ -1,19 +1,19 @@
 "use client"
 
 import { BiometricCard } from "./biometric-card"
-import { Heart, Brain, Footprints } from "lucide-react"
+import { Heart, Brain, Volume2 } from "lucide-react"
 import type { BiometricReading } from "@/lib/mock-data"
 
 interface BiometricCardsProps {
   heartRateData: BiometricReading[]
   stressData: BiometricReading[]
-  movementData: BiometricReading[]
+  sensoryLoadData: BiometricReading[]
 }
 
-export function BiometricCards({ heartRateData, stressData, movementData }: BiometricCardsProps) {
+export function BiometricCards({ heartRateData, stressData, sensoryLoadData }: BiometricCardsProps) {
   const currentHR = heartRateData[heartRateData.length - 1].value
   const currentStress = stressData[stressData.length - 1].value
-  const currentMovement = movementData[movementData.length - 1].value
+  const currentSensory = sensoryLoadData[sensoryLoadData.length - 1].value
 
   return (
     <div className="grid gap-4 sm:grid-cols-3">
@@ -36,11 +36,11 @@ export function BiometricCards({ heartRateData, stressData, movementData }: Biom
         fillColor="oklch(0.75 0.15 80)"
       />
       <BiometricCard
-        title="Physical Movement"
-        value={currentMovement}
-        unit="steps/min"
-        icon={<Footprints className="h-4 w-4" />}
-        data={movementData}
+        title="Sensory Load"
+        value={currentSensory}
+        unit="dB"
+        icon={<Volume2 className="h-4 w-4" />}
+        data={sensoryLoadData}
         color="oklch(0.55 0.15 240)"
         fillColor="oklch(0.55 0.15 240)"
       />
