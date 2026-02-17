@@ -3,8 +3,8 @@ export const studentProfile = {
   age: 9,
   grade: "4th Grade",
   avatar: "/placeholder-avatar.jpg",
-  status: "active" as const,
-  lastSync: "2 min ago",
+  status: "distressed" as const,
+  lastSync: "1 min ago",
 }
 
 export type StudentStatus = "active" | "calm" | "distressed"
@@ -19,29 +19,29 @@ export const heartRateData: BiometricReading[] = [
   { time: "9:05", value: 75 },
   { time: "9:10", value: 78 },
   { time: "9:15", value: 82 },
-  { time: "9:20", value: 80 },
-  { time: "9:25", value: 76 },
-  { time: "9:30", value: 74 },
-  { time: "9:35", value: 79 },
-  { time: "9:40", value: 85 },
-  { time: "9:45", value: 81 },
-  { time: "9:50", value: 77 },
-  { time: "9:55", value: 74 },
+  { time: "9:20", value: 85 },
+  { time: "9:25", value: 88 },
+  { time: "9:30", value: 92 },
+  { time: "9:35", value: 94 },
+  { time: "9:40", value: 96 },
+  { time: "9:45", value: 95 },
+  { time: "9:50", value: 97 },
+  { time: "9:55", value: 98 },
 ]
 
 export const stressData: BiometricReading[] = [
-  { time: "9:00", value: 22 },
-  { time: "9:05", value: 25 },
-  { time: "9:10", value: 30 },
-  { time: "9:15", value: 45 },
-  { time: "9:20", value: 42 },
-  { time: "9:25", value: 38 },
-  { time: "9:30", value: 35 },
-  { time: "9:35", value: 40 },
-  { time: "9:40", value: 55 },
-  { time: "9:45", value: 48 },
-  { time: "9:50", value: 38 },
-  { time: "9:55", value: 32 },
+  { time: "9:00", value: 55 },
+  { time: "9:05", value: 58 },
+  { time: "9:10", value: 62 },
+  { time: "9:15", value: 75 },
+  { time: "9:20", value: 78 },
+  { time: "9:25", value: 82 },
+  { time: "9:30", value: 85 },
+  { time: "9:35", value: 80 },
+  { time: "9:40", value: 88 },
+  { time: "9:45", value: 84 },
+  { time: "9:50", value: 79 },
+  { time: "9:55", value: 76 },
 ]
 
 export const sensoryLoadData: BiometricReading[] = [
@@ -158,4 +158,4 @@ export const actionAlerts: ActionAlert[] = [
   },
 ]
 
-export const arousalLevel = 62 // 0-100 scale
+export const arousalLevel = 78 // 0-100 scale

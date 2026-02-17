@@ -27,15 +27,6 @@ export function BiometricCards({ heartRateData, stressData, sensoryLoadData }: B
         fillColor="oklch(0.60 0.20 25)"
       />
       <BiometricCard
-        title="Stress Level"
-        value={currentStress}
-        unit="/ 100"
-        icon={<Brain className="h-4 w-4" />}
-        data={stressData}
-        color="oklch(0.75 0.15 80)"
-        fillColor="oklch(0.75 0.15 80)"
-      />
-      <BiometricCard
         title="Sensory Load"
         value={currentSensory}
         unit="dB"
@@ -43,6 +34,15 @@ export function BiometricCards({ heartRateData, stressData, sensoryLoadData }: B
         data={sensoryLoadData}
         color="oklch(0.55 0.15 240)"
         fillColor="oklch(0.55 0.15 240)"
+      />
+      <BiometricCard
+        title="Stress Level"
+        value={currentStress}
+        unit="/ 100"
+        icon={<Brain className="h-4 w-4" />}
+        data={stressData}
+        color="oklch(0.75 0.15 80)"
+        fillColor="oklch(0.75 0.15 80)"
       />
     </div>
   )
